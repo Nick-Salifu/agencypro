@@ -25,7 +25,7 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="px-4 md:px-6 bg-white">
+    <nav className="px-4 md:px-12 bg-white">
         <div className="flex items-center justify-between p-3">
             <div className="flex items-center gap-2">
                 <img src="/logo.jpg" alt="project image" className="w-9 h-9" />

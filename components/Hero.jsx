@@ -1,10 +1,10 @@
 
 const Hero = () => {
   return (
-    <section className="w-full px-4 md:px-6 bg-blue-50 flex items-center justify-center py-24">
+    <section className="w-full px-4 md:px-12 bg-blue-50 flex items-center justify-center py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
-                <h1 className="text-5xl font-bold mb-4 capitalize">
+                <h1 className="md:text-5xl text-4xl font-bold mb-4 capitalize">
                     Grow your business with our {" "}
                     <span className="text-blue-600">digital solutions.</span>
                 </h1> 

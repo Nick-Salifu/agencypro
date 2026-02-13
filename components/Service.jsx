@@ -4,10 +4,14 @@ import { FaLaptop, FaCode } from "react-icons/fa";
 
 const Service = () => {
   return (
-    <section className="px-4 md:px-6 my-8">
-        <h2 className="text-center font-bold text-3xl text-gray-700 mb-6">
-            Our Services
-        </h2>
+    <section className="px-4 md:px-12 my-8">
+        <div className="flex justify-center items-center gap-2">
+            <span className="border border-gray-300 w-28"></span>
+            <h1 className="font-bold text-3xl text-gray-700 mb-6">
+                Our Services
+            </h1>
+            <span className="border border-gray-300 w-28"></span>
+        </div>
         
         <div className="flex flex-col md:flex-row gap-4">
             <Card heading="SEO Optimization" icon={<BiWorld />} iconColor="bg-blue-500" />
