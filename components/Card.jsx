@@ -1,9 +1,9 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaAngleDoubleRight } from "react-icons/fa";
 
-const Card = ({heading, icon, iconColor}) => {
+const Card = ({heading, icon, iconColor, bgColor="bg-white", display="hidden", arrow="md:hidden"}) => {
   return (
-    <div className="rounded-lg shadow-lg p-4 bg-white">
+    <div className={`rounded-lg shadow-lg p-4 ${bgColor}`}>
         <div className="flex items-center justify-between gap-5 mb-3">
             <div className="flex items-center gap-3">
                 <div className={`rounded-full ${iconColor} p-1.5 text-white`}>
@@ -13,11 +13,11 @@ const Card = ({heading, icon, iconColor}) => {
                     {heading}
                 </p>
             </div>
-            <div className="md:hidden">
+            <div className={`${arrow}`}>
                 <FaAngleDoubleRight />
             </div>
         </div>
-        <p className="text-sm max-w-2xl hidden md:block mb-3">
+        <p className={`text-sm max-w-2xl ${display} md:block mb-3`}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit esse distinctio est? Perspiciatis voluptate impedit sunt non, porro
         </p>  
       
